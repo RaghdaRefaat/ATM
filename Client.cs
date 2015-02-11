@@ -68,11 +68,41 @@ namespace ATM
             sw.Close();
         }
 
-        public bool SearchID(int id)
+        public Client GetClient(int id)
         {
             FileStream f = new FileStream("D://ClientData.txt", FileMode.Open);
             StreamReader sr = new StreamReader(f);
+            int tmp = 0;
+            string name = " ";
+            int bal = 0;
+            int len = counter * 3;
+            while (sr.Peek() != -1)
+            {
+                tmp = int.Parse(sr.ReadLine());
+                if (tmp == id)
+                {
+                    name = sr.ReadLine();
+                    bal = int.Parse(sr.ReadLine());
+                    break;
+                }
+                else
+                {
+                    sr.ReadLine();
+                    sr.ReadLine();
+                }
 
+            }
+            SetID(id);
+            SetName(name);
+            SetBalance(bal);
+            return this;
         }
+
+        public void AddMoney(int balance)
+        {
+            FileStream f = new FileStream("D://ClientData.txt", FileMode.Append);
+            StreamWriter sw = new StreamWriter(f);
+        }
+
     }
 }

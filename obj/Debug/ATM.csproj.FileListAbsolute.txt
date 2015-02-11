@@ -4,3 +4,6 @@ D:\My Projects\ATM\bin\Debug\ATM.pdb
 D:\My Projects\ATM\obj\Debug\ATM.csprojResolveAssemblyReference.cache
 D:\My Projects\ATM\obj\Debug\ATM.exe
 D:\My Projects\ATM\obj\Debug\ATM.pdb
+D:\My Projects\ATM\ATM\bin\Debug\ATM.exe.config
+D:\My Projects\ATM\ATM\obj\Debug\ATM.exe
+D:\My Projects\ATM\ATM\obj\Debug\ATM.pdb
